@@ -1,0 +1,33 @@
+export const COLOR = {
+  ROOT_BACKGROUND: "#f7f7f7",
+  BACKGROUND: "#ffffff",
+  FOREGROUND: "#171717",
+
+  GREY_300: "#d0d5dd",
+  GREY_400: "#98a2b3",
+  GREY_500: "#667085",
+  GREY_600: "#475467",
+  GREY_700: "#344054",
+  GREY_800: "#1d2939",
+  GREY_900: "#101828",
+
+  PRIMARY_300: "#409c98",
+  PRIMARY_400: "#3b8e8a",
+  PRIMARY_500: "#367e79",
+  PRIMARY_600: "#336e69",
+
+  ERROR_300: "#fda29b",
+  ERROR_400: "#f97066",
+  ERROR_500: "#f04438",
+  ERROR_600: "#d92d20",
+
+  WARNING_300: "#fec84b",
+  WARNING_400: "#fdb022",
+  WARNING_500: "#f79009",
+  WARNING_600: "#dc6803",
+
+  SUCCESS_300: "#6ce9a6",
+  SUCCESS_400: "#32d583",
+  SUCCESS_500: "#12b76a",
+  SUCCESS_600: "#039855",
+};

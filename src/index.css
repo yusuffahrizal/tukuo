@@ -1,0 +1,59 @@
+/* src/index.css */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;500;600;700&display=swap");
+/* @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap'); */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --root-background: #f4f7f5; /* Warna yang lebih terang untuk latar belakang */
+  --body-background: #e5eae8;
+  --background: #ffffff;
+  --foreground: #08090a; /* Warna teks atau foreground utama */
+
+  /* Greyscale Colors */
+  --grey-300: #d0d5dd;
+  --grey-400: #a7a2a9;
+  --grey-500: #808489;
+  --grey-600: #575a5e; /* Sama dengan primary */
+  --grey-700: #343739;
+  --grey-800: #222823; /* Warna abu gelap tambahan */
+  --grey-900: #08090a;
+
+  /* Primary Colors (Menggunakan #575A5E) */
+  --primary-300: #859195; /* Versi terang dari primary */
+  --primary-400: #6e777b; /* Menjadi gradasi primary */
+  --primary-500: #575a5e; /* Primary utama */
+  --primary-600: #44474b; /* Versi lebih gelap untuk hover */
+
+  /* Secondary Colors (Menggunakan #A7A2A9) */
+  --secondary-300: #c0bfc2; /* Versi terang dari secondary */
+  --secondary-400: #a7a2a9; /* Secondary utama */
+  --secondary-500: #8e8a8f; /* Lebih gelap */
+  --secondary-600: #6b676c; /* Paling gelap untuk secondary */
+
+  /* Error Colors */
+  --error-300: #fecaca; /* Merah terang */
+  --error-400: #fc8d8d; /* Merah sedikit lebih gelap */
+  --error-500: #f04438; /* Merah utama untuk error */
+  --error-600: #d12d20; /* Merah gelap untuk error */
+
+  /* Warning Colors */
+  --warning-300: #fde68a; /* Kuning terang */
+  --warning-400: #facc15; /* Kuning utama */
+  --warning-500: #f59e0b; /* Kuning sedikit lebih gelap */
+  --warning-600: #d97706; /* Warna gelap untuk warning */
+
+  /* Success Colors */
+  --success-300: #a7f3d0; /* Hijau terang */
+  --success-400: #34d399; /* Hijau utama untuk success */
+  --success-500: #10b981; /* Hijau gelap */
+  --success-600: #047857; /* Hijau paling gelap untuk success */
+}
+
+body {
+  background-color: var(--body-background);
+}
