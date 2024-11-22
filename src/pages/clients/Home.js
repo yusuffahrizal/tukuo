@@ -6,7 +6,7 @@ import {
   Personalcard,
   ShoppingBag,
 } from "iconsax-react";
-import { ClientCardList, ClientNavbar } from "../../components/clients";
+import { ClientCardList, ClientModalOrderType, ClientNavbar } from "../../components/clients";
 import { CoreButton } from "../../components/core";
 import { useEffect, useState } from "react";
 import { COLOR } from "../../theme";
@@ -32,6 +32,7 @@ export default function PageClientHome() {
     };
 
     window.addEventListener("scroll", handleScroll);
+    console.log("hallo");
 
     return () => {
       window.removeEventListener("scroll", handleScroll);
@@ -51,6 +52,7 @@ export default function PageClientHome() {
 
   return (
     <>
+      {/* <ClientModalOrderType /> */}
       <ClientNavbar />
       <section>
         <div className="relative">
@@ -71,7 +73,7 @@ export default function PageClientHome() {
           </a>
         </div>
         <div className="p-3 shadow-md bg-background">
-          <h1 className="font-poppins font-medium text-sm md:text-base text-x_text-heading">
+          <h1 className="font-poppins font-medium text-sm md:text-base text-x_text-heading ">
             Nasi Goreng Enak
           </h1>
           <p className="text-xs md:text-sm text-x_text-secondary mt-2 line-clamp-3">

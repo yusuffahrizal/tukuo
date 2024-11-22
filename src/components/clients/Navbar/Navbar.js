@@ -1,15 +1,7 @@
-import {
-  Check,
-  CloseCircle,
-  CloseSquare,
-  Filter,
-  HambergerMenu,
-  Menu,
-  SearchNormal1,
-  ShoppingBag,
-} from "iconsax-react";
+import { CloseCircle, Filter, SearchNormal1 } from "iconsax-react";
 import { useEffect, useRef, useState } from "react";
 import { COLOR } from "../../../theme";
+import { CoreButton } from "../../core";
 
 export default function ClientNavbar() {
   const sidebarRef = useRef(null);
@@ -55,7 +47,10 @@ export default function ClientNavbar() {
           onClick={toggleSearch}
           className="aspect-square w-5 md:w-6"
         />
-        <a className="text-xs md:text-sm text-x_text-heading font-medium font-poppins">
+        <a
+          className="text-xs md:text-sm text-x_text-heading font-medium font-poppins"
+          href="#"
+        >
           Powered by <strong>Tukuo</strong>
         </a>
         <div className="inline-flex gap-4">
@@ -68,7 +63,7 @@ export default function ClientNavbar() {
         </div>
         <div
           ref={sidebarRef}
-          className={`fixed md:absolute top-0 right-0 h-full w-64 bg-background py-4 pl-4 transition-transform transform duration-300 z-50 ${
+          className={`fixed md:absolute top-0 right-0 h-full w-64 bg-background py-4 pl-4 transition-transform transform duration-300 z-10 ${
             showSidebar
               ? "translate-x-0 opacity-100"
               : "translate-x-full opacity-0"
@@ -103,139 +98,9 @@ export default function ClientNavbar() {
                 <span className="text-x_text-normal text-xs md:text-sm mt-1 cursor-pointer">
                   Pakaian
                 </span>
-                <span className="text-x_text-normal text-xs md:text-sm mt-1 cursor-pointer">
-                  Pakaian
-                </span>
-                <span className="text-x_text-normal text-xs md:text-sm mt-1 cursor-pointer">
-                  Pakaian
-                </span>
-                <span className="text-x_text-normal text-xs md:text-sm mt-1 cursor-pointer">
-                  Pakaian
-                </span>
-                <span className="text-x_text-normal text-xs md:text-sm mt-1 cursor-pointer">
-                  Pakaian
-                </span>
-                <span className="text-x_text-normal text-xs md:text-sm mt-1 cursor-pointer">
-                  Pakaian
-                </span>
-                <span className="text-x_text-normal text-xs md:text-sm mt-1 cursor-pointer">
-                  Pakaian
-                </span>
-                <span className="text-x_text-normal text-xs md:text-sm mt-1 cursor-pointer">
-                  Pakaian
-                </span>
-                <span className="text-x_text-normal text-xs md:text-sm mt-1 cursor-pointer">
-                  Pakaian
-                </span>
-                <span className="text-x_text-normal text-xs md:text-sm mt-1 cursor-pointer">
-                  Pakaian
-                </span>
-                <span className="text-x_text-normal text-xs md:text-sm mt-1 cursor-pointer">
-                  Pakaian
-                </span>
-                <span className="text-x_text-normal text-xs md:text-sm mt-1 cursor-pointer">
-                  Pakaian
-                </span>
-                <span className="text-x_text-normal text-xs md:text-sm mt-1 cursor-pointer">
-                  Pakaian
-                </span>
-                <span className="text-x_text-normal text-xs md:text-sm mt-1 cursor-pointer">
-                  Pakaian
-                </span>
-                <span className="text-x_text-normal text-xs md:text-sm mt-1 cursor-pointer">
-                  Pakaian
-                </span>
-                <span className="text-x_text-normal text-xs md:text-sm mt-1 cursor-pointer">
-                  Pakaian
-                </span>
-                <span className="text-x_text-normal text-xs md:text-sm mt-1 cursor-pointer">
-                  Pakaian
-                </span>
-                <span className="text-x_text-normal text-xs md:text-sm mt-1 cursor-pointer">
-                  Pakaian
-                </span>
-                <span className="text-x_text-normal text-xs md:text-sm mt-1 cursor-pointer">
-                  Pakaian
-                </span>
-                <span className="text-x_text-normal text-xs md:text-sm mt-1 cursor-pointer">
-                  Pakaian
-                </span>
-                <span className="text-x_text-normal text-xs md:text-sm mt-1 cursor-pointer">
-                  Pakaian
-                </span>
-                <span className="text-x_text-normal text-xs md:text-sm mt-1 cursor-pointer">
-                  Pakaian
-                </span>
-                <span className="text-x_text-normal text-xs md:text-sm mt-1 cursor-pointer">
-                  Pakaian
-                </span>
-                <span className="text-x_text-normal text-xs md:text-sm mt-1 cursor-pointer">
-                  Pakaian
-                </span>
-                <span className="text-x_text-normal text-xs md:text-sm mt-1 cursor-pointer">
-                  Pakaian
-                </span>
-                <span className="text-x_text-normal text-xs md:text-sm mt-1 cursor-pointer">
-                  Pakaian
-                </span>
-                <span className="text-x_text-normal text-xs md:text-sm mt-1 cursor-pointer">
-                  Pakaian
-                </span>
-                <span className="text-x_text-normal text-xs md:text-sm mt-1 cursor-pointer">
-                  Pakaian
-                </span>
-                <span className="text-x_text-normal text-xs md:text-sm mt-1 cursor-pointer">
-                  Pakaian
-                </span>
-                <span className="text-x_text-normal text-xs md:text-sm mt-1 cursor-pointer">
-                  Pakaian
-                </span>
-                <span className="text-x_text-normal text-xs md:text-sm mt-1 cursor-pointer">
-                  Pakaian
-                </span>
-                <span className="text-x_text-normal text-xs md:text-sm mt-1 cursor-pointer">
-                  Pakaian
-                </span>
-                <span className="text-x_text-normal text-xs md:text-sm mt-1 cursor-pointer">
-                  Pakaian
-                </span>
-                <span className="text-x_text-normal text-xs md:text-sm mt-1 cursor-pointer">
-                  Pakaian
-                </span>
-                <span className="text-x_text-normal text-xs md:text-sm mt-1 cursor-pointer">
-                  Pakaian
-                </span>
-                <span className="text-x_text-normal text-xs md:text-sm mt-1 cursor-pointer">
-                  Pakaian
-                </span>
-                <span className="text-x_text-normal text-xs md:text-sm mt-1 cursor-pointer">
-                  Pakaian
-                </span>
-                <span className="text-x_text-normal text-xs md:text-sm mt-1 cursor-pointer">
-                  Pakaian
-                </span>
-                <span className="text-x_text-normal text-xs md:text-sm mt-1 cursor-pointer">
-                  Pakaian
-                </span>
-                <span className="text-x_text-normal text-xs md:text-sm mt-1 cursor-pointer">
-                  Pakaian
-                </span>
-                <span className="text-x_text-normal text-xs md:text-sm mt-1 cursor-pointer">
-                  Pakaian
-                </span>
-                <span className="text-x_text-normal text-xs md:text-sm mt-1 cursor-pointer">
-                  Pakaian
-                </span>
-                <span className="text-x_text-normal text-xs md:text-sm mt-1 cursor-pointer">
-                  Pakaian
-                </span>
-                <span className="text-x_text-normal text-xs md:text-sm mt-1 cursor-pointer">
-                  Pakaian
-                </span>
-                <span className="text-x_text-normal text-xs md:text-sm mt-1 cursor-pointer">
-                  Pakaian
-                </span>
-                <div className="my-8"><span>&nbsp;</span></div>
+                <div className="my-8">
+                  <span>&nbsp;</span>
+                </div>
               </div>
             </div>
           </div>
@@ -244,13 +109,19 @@ export default function ClientNavbar() {
       <div
         ref={searchRef}
         className={`absolute ${
-          showSearch ? "top-10" : "top-0"
-        } max-w-screen-sm w-full transform transition-transform z-50 ${
+          showSearch ? "top-16" : "top-0"
+        } max-w-screen-sm w-full transform transition-transform z-10 ${
           showSearch ? "translate-y-0" : "-translate-y-full"
         }`}
       >
-        <div className="mx-4 bg-blue-200 flex flex-row p-4 rounded-md">
-          <input type="text" className="border" />
+        <div className="mx-4 bg-background flex flex-row p-4 rounded-md gap-2">
+          <input
+            type="text"
+            className="border w-full focus:border-primary focus:ring-1 focus:outline-none text-x_text-normal p-2 rounded-lg text-sm basis-4/5"
+          />
+          <CoreButton className="basis-1/5" onClick={() => {}}>
+            Cari
+          </CoreButton>
         </div>
       </div>
     </nav>
